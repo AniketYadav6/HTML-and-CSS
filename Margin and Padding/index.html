@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin and padding task</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        * > h1{
+            text-align: center;
+            font-size: 40px;
+            margin-top: 30px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .divOne{
+            background-color: aquamarine;
+            padding: 12px;
+            margin: 50px;
+
+        }
+        .divTwo{
+            background-color:beige;
+            padding: 12px;
+            margin: 0 200px 0 200px;
+        }
+        .divThree{
+            margin-top: 48px;
+            margin-left: 100px;
+            background-color: brown;
+            padding: 12px;
+            margin-right: 1000px;
+            text-align: center;
+
+        }
+        .divOne,.divThree{
+            font-size: 32px;
+        }
+        .divOne .internal{
+            background-color: aliceblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Learning about margin and padding</h1>
+    <div class="divOne">
+        <h2>Div One</h2>
+        <div class="internal">
+            <h1>Div one Internal</h1>
+        </div>
+    </div>
+    <div class="divTwo">
+        <h2>Div Two</h2>
+    </div>
+    <div class="divThree">
+        <h2>Div divThree</h2>
+    </div>
+</body>
+</html>
