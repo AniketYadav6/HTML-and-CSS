@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        h1,h2,h3,p{
+            color: white;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        .container{
+            padding: 20px;
+            margin: 10px;
+        }
+        .container .header,.mainContent,.footer{
+            margin: 10px;
+            padding: 5px;
+        }
+        .container .header,.mainContent,.footer,.nav,.article,.sidebar{
+            border: 3px solid black;
+            border-radius: 12px;
+        }
+        .container .header,.nav{
+            background-color: green;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container .mainContent .sidebar{
+            background-color:burlywood
+        }
+        .container .mainContent .internalMain .nav{
+            background-color: blue;
+        }
+        .container .mainContent .internalMain .article{
+            background-color: blueviolet;
+            margin-top: 10px;
+        }
+        .container .footer{
+            background-color: rgb(15, 100, 72);
+            padding: 20px;
+            text-align: center;
+        }
+        .container .mainContent{
+            display: flex;
+        }
+        .container .mainContent .internalMain {
+            padding: 0;
+            padding-left: 10px;
+        }
+        div{
+            padding: 10px;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="mainContent">
+            <div class="sidebar">
+                <h2>sidebar</h2>
+            </div>
+            <div class="internalMain">
+                <div class="nav">
+                    <h2>Nav</h2>
+                </div>
+                <div class="article">
+                    <h1>Article</h1><br>
+                    <p>Artificial intelligence (AI) is a wide-ranging tool that enables people to rethink how we integrate information, analyze data, and use the resulting insights to improve decision making—and already it is transforming every walk of life. In this report, Darrell West and John Allen discuss AI’s application across a variety of sectors, address issues in its development, and offer recommendations for getting the most out of AI while still protecting important human values.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>Footer</h3>
+        </div>
+    </div>
+    
+</body>
+</html>
